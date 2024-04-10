@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-color: #f4e9e0;
+    background-image: url("leaf_fall_1.gif");
+  }
+
+
+  
+  .birthdayCard {
+    position: relative;
+    width: 250px;
+    height:350px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+      transform: perspective(2500px);
+    transition: 4s;
+  }
+  
+  .birthdayCard:hover {
+      transform: perspective(2500px) rotate(5deg);
+      box-shadow: inset 100px 20px 100px rgba(0,0,0,.15), 0 10px 100px rgba(0,0,0,0.3);
+  }
+  
+  .birthdayCard:hover .cardFront {
+    transform: rotateY(-160deg); 
+  }
+  
+  .birthdayCard:hover .front-text {
+    display: none;
+  }
+  
+  .birthdayCard:hover .wrap-deco {
+    display: none;
+  }
+  
+  .birthdayCard:hover .wrap-decoTwo {
+    display: none;
+  }
+  
+  .birthdayCard:hover .plate {
+    display: none;
+  }
+  
+  .cardFront {
+    position: relative;
+    background-color: #f4e0eb;
+    width: 250px;
+    height:350px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(255, 255, 255, 0.13), 30px 0 50px rgba(0,0,0,0.1);
+    border-style: solid;
+    transition: .4s;
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  .happy, .toyou {
+    position: relative;
+    font-family: didot;
+    text-align: center;
+    backface-visibility: hidden;
+    font-size: 30px; 
+  }
+
+  .sorry_img
+  {
+    margin-top: 60px;
+    margin-left: 40px;
+  }
+  
+  .happy {
+    top:198px;
+  }
+  
+  .toyou {
+    top:123px;
+  }
+  
+  .bday {
+    position: relative;
+    font-family: arial;
+    font-size: 35px;
+    text-align: center;
+    top:163px;
+  }
+  
+  .wrap-deco {
+    position: absolute;
+    top:-230px;
+    left:-200px;
+  }
+  
+  
+  .cardInside {
+    position: absolute;
+    background-color: #f4e0eb;
+    width: 250px;
+    height:350px;
+    z-index:-1;
+    left:0;
+    top:0;
+    box-shadow: inset 100px 20px 100px rgba(255, 255, 255, 0.13), 30px 0 50px rgba(0,0,0,0.1);
+    border-style: solid;
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  .inside-text {
+    position: relative;
+    top:-160px;
+    transform: scale(0.7);
+  }
+  
+  .wishes {
+    position: relative;
+    top:-160px;
+    margin: 20px;
+  }
+  
+  p {
+    font-family: 'Brush Script MT', cursive;
+    color: #333;
+  }
+  
+  .name {
+    margin-top: -20px;
+    margin-left:150px;
+  }
+  
+  
+  
